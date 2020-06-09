@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Manrope';
+}
+
+.weather {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.city-name {
+    font-size: 3.6rem;
+    margin-top: 1rem;
+}
+
+.city {
+    padding: 10px;
+    width: 25%;
+    margin-right: 1rem;
+}
+
+.search-btn {
+    padding: 10px;
+    font-size: .7rem;
+    color: black;
+    border: 1px solid black;
+}
+
+.search-btn:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.table {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 10px auto;
+}
+
+.table-headers,
+.table-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    font-size: 1.3rem;
+    margin-right: 1.8rem;
+    font-weight: bold;
+}
+
+.item {
+    font-size: 1.1rem;
+    margin-right: 1.8rem;
+}
+
+.temperature {
+    font-size: 2.5rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}

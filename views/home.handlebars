@@ -1,0 +1,25 @@
+<section class="weather">
+    <form action="/">
+        <input class="city" type="text" name="city" id="city">
+        <button class="search-btn">Search</button>
+    </form>
+    {{#if weather.message}}
+    <h1 class="city-name">Could not find city. Try again</h1>
+    {{else}}
+    <h1 class="city-name">{{ weather.city }}</h1>
+    <p class="temperature">{{ weather.temp }}</p>
+    <br>
+    <div class="table">
+        <div class="table-headers">
+            <span class="header">Wind</span>
+            <span class="header">Sunrise</span>
+            <span class="header">Sunset</span>
+        </div>
+        <div class="table-items">
+            <span class="item">{{ weather.wind }}</span>
+            <span class="item">{{ weather.sunrise }}</span>
+            <span class="item">{{ weather.sunset }}</span>
+        </div>
+    </div>
+    {{/if}}
+</section>
