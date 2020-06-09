@@ -23,23 +23,5 @@ app.get('/', async (req, res) => {
         console.error(err)
     }
 })
-// Erase this route when done testing
-app.get('/data', async (req, res) => {
-    try {
-        const weather = await utils.getWeatherData('San Francisco')
-        if (weather.cod == 200){
-            // res.render('home', { weather })
-            res.send(weather)
-        } else {
-            res.send(weather.message)
-        }
-    } catch (err){
-        console.error(err)
-    }
-})
-
-// app.post('/search', (req, res) => {
-//     console.log(req.body.city)
-// })
 
 app.listen(port, () => console.log(`Server started on port ${port}`))
